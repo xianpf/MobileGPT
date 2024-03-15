@@ -259,7 +259,7 @@ class MobileGPT_Operator:
 
         response = self.action_manager.operate(self.encoded_xml, self.scr_shot_path)
         self.recent_response = response
-        self.action_history.append(self.recent_response)
+        self.action_history.append(copy.deepcopy(self.recent_response))
 
         return response
 
@@ -324,15 +324,15 @@ class MobileGPT_Operator:
 
     def Answer(self, answer):
         feedback, self.recent_response = self.action_manager.Answer(answer)
-        self.action_history.append(feedback)
-        self.action_history.append(self.recent_response)
+        self.action_history.append(copy.deepcopy(feedback))
+        self.action_history.append(copy.deepcopy(self.recent_response))
 
         return self.recent_response
 
     def Error(self, err_msg):
         feedback, self.recent_response = self.action_manager.Error(err_msg)
-        self.action_history.append(feedback)
-        self.action_history.append(self.recent_response)
+        self.action_history.append(copy.deepcopy(feedback))
+        self.action_history.append(copy.deepcopy(self.recent_response))
 
         return self.recent_response
 
