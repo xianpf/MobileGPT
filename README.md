@@ -77,7 +77,7 @@ Now you're all set. Let's run it
     + The first time you run the app to register a user, it will take quite a while to clean up the current app's available apps. Verify that registration is complete via a terminal on the server and move on. You may get a crash error.
    
 4. Return to the app again and input the desired user Instruction in the red box.
-5. then click the [Set New Instruction] button to execute it.
+5. then click the Blue box [Set New Instruction] button to execute it.
 
 + This app is a prototype for experimentation and interacting with other buttons is not recommended.
 + Unless a pop-up window pops up and asks the user for something, interacting with the screen during execution is not recommended, as it can cause errors.
