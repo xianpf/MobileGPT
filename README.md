@@ -12,7 +12,7 @@ Make sure you have:
 
 1. `Python 3.12` 
 2. `Java`
-3. `Android SDK`
+3. `Android SDK >= 33`
 
 Then clone this repo and install with `pip` about requirements.txt:
 
@@ -31,7 +31,7 @@ Our MobileGPT system consists of a Python Server and an Android Client app. You 
 Prepare IP address and appropriate port to communicate with the server in advance. The `IP`, `PORT` must be set to the same for server and client.
 
 ## MobileGPT App
-+ Replace the ./MobileGPT_app/app/src/main/java/com/example/fluidgpt/FluidGlobal.java file's IP and Port
++ Replace the ./MobileGPT_app/app/src/main/java/com/example/fluidgpt/FluidGlobal.java file's IP and Port. And The version of our MobileGPT's SDK must be at least 33.
 
 ```java
 public static final String HOST_IP = "000.000.000.000";
