@@ -103,8 +103,8 @@ Response Format
 def make_messages_history(sub_task, sub_task_reason, action_history):
 
     sys_msg = \
-f"""I will give you a list of commands and reasoning behind the commands. Summarize in one phrase what has been achieve through the list of commands. Summarize and human-friendly like user position (Start the sentence with a verb and refrain from using code specific details)
-I need short phrase that summarizes the whole commands list. The phrase should include a summary of [commands, purposes(reason), outcomes, and other important details]!, which must not be omitted from the summary. and the sentence must include specifically what is selected (when question is occurred.)
+f"""I will give you a list of commands and reasoning behind the commands. Summarize what has been achieve through the list of commands(This Function is ended, so I need the summary.). Summarize and human-friendly like user position (Start the sentence with a verb and refrain from using code specific details(like command name, completion etc.)
+I need short phrase that summarizes the whole commands list perfectly. The phrase should include a summary of [commands, purposes(reason), outcomes, and other important details(if there is failure, exception etc..)], which must not be omitted from the summary. and the sentence must include specifically what is selected (when question is occurred.)
 
 Suggested Verbs to start the phrase: {{Selected, Clicked, Entered, Opened, Finished, Displayed, Shared}}
 
