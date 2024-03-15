@@ -11,8 +11,7 @@ you can check related information [About Dataset](#About-Dataset).
 Make sure you have:
 
 1. `Python 3.12` 
-2. `Java`
-3. `Android SDK >= 33`
+2. `Android SDK >= 33`
 
 Then clone this repo and install with `pip` about requirements.txt:
 
