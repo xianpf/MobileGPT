@@ -110,7 +110,9 @@ Benchmark Dataset
 <app2>
 ...
 ```
-+ **BenchMark Dataset**: The top level of the dataset, containing folders for each eight application[YT Music, Uber Eats, Twitter, TripAdvisor, Telegram, Microsoft To-Do, Google Dialer, Gmail]
++ **BenchMark Dataset**: The top level of the dataset, containing folders for each eight application
++ 
+  [YT Music, Uber Eats, Twitter, TripAdvisor, Telegram, Microsoft To-Do, Google Dialer, Gmail]
 
 + **App Folders**: Records of  all the screenshots and xmls parsed by MobileGPT:
 
