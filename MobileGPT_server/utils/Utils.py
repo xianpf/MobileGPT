@@ -127,7 +127,7 @@ def find_parent(parsed_xml, xml_depth_rank_list, target_ui_index, index=False):
 
     return parent_tag
 
-def find_child(parsed_xml, xml_depth_rank_list, target_ui_index):           #우선 ㄴ
+def find_child(parsed_xml, xml_depth_rank_list, target_ui_index):   
     child_indexs = []
     there_are_child = False
 
