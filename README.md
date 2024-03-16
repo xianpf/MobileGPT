@@ -1,5 +1,6 @@
 # MobileGPT
 This repository is an implementation of the code for :
+
 [MobileGPT: Augmenting LLM with Human-like App Memory for Mobile Task Automation]
 
 For accessing the our Benchmark Dataset, you could download it from [Google Cloud](https://drive.google.com/file/d/1dmc9iHFRSD-rEiknV3R_tcihGXMsm/view?usp=sharing), 
