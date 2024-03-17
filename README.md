@@ -3,7 +3,7 @@ This repository is an implementation of the code for this Paper's system:
 
 [Explore, Select, Derive, and Recall: Augmenting LLM with Human-like Memory for Mobile Task Automation](https://arxiv.org/abs/2312.03003).
 
-For accessing the our Benchmark Dataset, you can download it from [Google Cloud](https://drive.google.com/file/d/1dmc9iHFRSD-rEiknV3R_tcihGXMsm/view?usp=sharing), 
+For accessing the our Benchmark Dataset, you can download it from [Google Cloud](https://drive.google.com/file/d/11Q6W2wtpqfBfLVWRGW8mcNaBD2VKO2Z_/view?usp=sharing), 
 you can check related information [About Dataset](#About-Dataset). 
 
 
@@ -89,21 +89,21 @@ Benchmark Dataset
 │
 <app1>
 │  ├── <task1>
-│  │       |── <user_instruction1.json>
-│  │       |── <user_instruction2.json>
+│  │       |── user_instruction1.json
+│  │       |── user_instruction2.json
 │  └── <task2>
-│  │       |── <user_instruction1.json>
-│  │       |── <user_instruction2.json>
+│  │       |── user_instruction1.json
+│  │       |── user_instruction2.json
 │  └── ...
 │  └── <task10>
-│  │       |── <user_instruction1.json>
-│  │       └── <user_instruction2.json>
+│  │       |── user_instruction1.json
+│  │       └── user_instruction2.json
 │  │
 │  └── Screenshots
-│  │       |── <index.png>
+│  │       |── <1.png>
 │  │       └── ...
 │  └── Xmls
-│  │       |── <index.xml>
+│  │       |── <1.xml>
 │  │       └── ...
 │  │
 <app2>
@@ -120,7 +120,9 @@ Benchmark Dataset
      + **Screenshot Folder**: Images captured from running the application's interface about the instruction, named sequentially indexing (e.g., `1.png`, `2.png`, etc.).
 
      + **Xmls Folder**: xml files detailing the structure of the application's UI for each step (e.g., `1.xml`, `2.xml`, etc.).
-
+ 
+     +  **in the json**: Inside the JSON folder is a dictionary object. For instruction, it contains the user's instruction value for that Sequence, and Steps contains information about each step: the number of steps, the processed HTML representation, the instruction, the index of the screenshot, and the index of the raw xml.
+       
 # Note
 
 - Since MobileGPT is a research software, it may produce unexpected behavior or results (automatic payments, unsubscribing the account), so it is recommended to check its behavior carefully.
