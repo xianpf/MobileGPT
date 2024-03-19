@@ -70,7 +70,7 @@ python ./MobileGPT_Main.py <server_ip> <server_port> <using vision True or False
 ## Run
 Now you're all set. Let's run it
 
-![Explain](https://github.com/mobile-gpt/MobileGPT/assets/152391659/1f9dd04e-da1a-40d2-80fc-b15785377d58)
+![sequence](https://github.com/mobile-gpt/MobileGPT/assets/152391659/0bceedc7-fdce-4e05-bcea-c1e84c7af97b)
 
 1. after the server is up and running. Force stop and restart the client app.
 2. Allow the Accessibility Service.
