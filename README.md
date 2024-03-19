@@ -79,6 +79,7 @@ Now you're all set. Let's run it
 4. Return to the app again and input the desired user Instruction in the red box.
 5. then click the Blue box [Set New Instruction] button to execute it.
 
+Check this.
 + This app is a prototype for experimentation and interacting with other buttons is not recommended.
 + Unless a pop-up window pops up and asks the user for something, interacting with the screen during execution is not recommended, as it can cause errors.
 + Please note that the human-in-the-loop (HITL) task repair is uploaded excluding server operations
