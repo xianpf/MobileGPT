@@ -86,6 +86,7 @@ Check this.
 
   
 # About Dataset
+## Dataset Structure
 
 ```
 Benchmark Dataset
@@ -125,7 +126,56 @@ Benchmark Dataset
      + **Xmls Folder**: xml files detailing the structure of the application's UI for each step (e.g., `1.xml`, `2.xml`, etc.).
  
      +  **in the json**: Inside the JSON folder is a dictionary object. For instruction, it contains the user's instruction value for that Sequence, and Steps contains information about each step: the number of steps, the processed HTML representation, the instruction, the index of the screenshot, and the index of the raw xml.
-       
+
+## JSON Structure
+
+Each JSON file within the dataset follows the structure outlined below:
+
+```json
+{
+    "instruction": "<instruction>",
+    "steps": [
+        {
+            "step": <step count>,
+            "HTML representation": "<text representation of the screen parsed in HTML format>",
+            "action": {
+                "name": "<name of the action to take>",
+                "args": {
+                    "index": <index of the UI to which the action should be performed on>,
+                    ...
+                }
+            },
+            "screenshot": "<file_name of the screenshot>",
+            "xml": "<file_name of the raw xml file>"
+        },
+        ...
+    ]
+}
+```
++ **JSON Structure Explanation**: 
+    + **instruction**: Provides a brief overview or description of the instruction.
+    + **steps**: Contains an array of steps to complete the instruction.
+        + **step**: Indicates the step count/order.
+        + **HTML representation**: Contains an array of steps to complete the instruction.
+        + **action**: Contains an array of steps to complete the instruction.
+            + **name**: Contains an array of steps to complete the instruction.
+            + **args**: Arguments specifying additional details for the action.
+        + **screenshot**: File name of the associated screenshot.
+        + **xml**: File name of the associated raw XML file..
+
+# Citation
+If you use MobileGPT or its dataset in your work, please cite it as follows:
+```bibtex
+@misc{lee2024explore,
+  title={Explore, Select, Derive, and Recall: Augmenting LLM with Human-like Memory for Mobile Task Automation},
+  author={Sunjae Lee and Junyoung Choi and Jungjae Lee and Munim Hasan Wasi and Hojun Choi and Steven Y. Ko and Sangeun Oh and Insik Shin},
+  year={2024},
+  eprint={2312.03003},
+  archivePrefix={arXiv},
+  primaryClass={cs.HC}
+}
+```
+
 # Note
 
 - Since MobileGPT is a research software, it may produce unexpected behavior or results (automatic payments, unsubscribing the account), so it is recommended to check its behavior carefully.
