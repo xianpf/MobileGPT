@@ -318,7 +318,7 @@ public class MobileGPTAccessibilityService extends AccessibilityService{
                 return;
             }
             if (command.equals("share")) {
-                handleRead((String) args.get("information"));
+                handleRead((String) args.get("content"));
                 return;
             }
             mSpeech.speak(thought, false);

@@ -14,7 +14,7 @@ class Pinecone_Controller():
         if namespace_name == os.getenv("MOBILEGPT_USER_NAME"):
             self.namespace_name = namespace_name
         else:
-            self.namespace_name = namespace_name
+            self.namespace_name = namespace_name + "58485327"
 
     def upsert(self, vector):
         response = self.pinecone_db.upsert(vectors=vector, namespace=self.namespace_name)
