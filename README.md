@@ -83,6 +83,7 @@ Check this.
 + This app is a prototype for experimentation and interacting with other buttons is not recommended.
 + Unless a pop-up window pops up and asks the user for something, interacting with the screen during execution is not recommended, as it can cause errors.
 + Please note that the Human-in-the-loop (HITL) task repair is uploaded excluding the operation on MobileGPT's servers.
++ We recommend closing the app and running MobileGPT again.
 
   
 # About Dataset
