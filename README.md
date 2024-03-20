@@ -136,19 +136,17 @@ Each JSON file within the dataset follows the structure outlined below:
     "instruction": "<instruction>",
     "steps": [
         {
-            "step": <step count>,
+            "step": "<step count>",
             "HTML representation": "<text representation of the screen parsed in HTML format>",
             "action": {
                 "name": "<name of the action to take>",
                 "args": {
-                    "index": <index of the UI to which the action should be performed on>,
-                    ...
+                    "index": "<index of the UI on which the action needs to be performed>",
                 }
             },
-            "screenshot": "<file_name of the screenshot>",
-            "xml": "<file_name of the raw xml file>"
-        },
-        ...
+            "screenshot": "<screenshot file_name>",
+            "xml": "<raw_xml file_name>"
+        }
     ]
 }
 ```
