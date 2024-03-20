@@ -124,8 +124,6 @@ Benchmark Dataset
      + **Screenshot Folder**: Images captured from running the application's interface about the instruction, named sequentially indexing (e.g., `1.png`, `2.png`, etc.).
 
      + **Xmls Folder**: xml files detailing the structure of the application's UI for each step (e.g., `1.xml`, `2.xml`, etc.).
- 
-     +  **in the json**: Inside the JSON folder is a dictionary object. For instruction, it contains the user's instruction value for that Sequence, and Steps contains information about each step: the number of steps, the processed HTML representation, the instruction, the index of the screenshot, and the index of the raw xml.
 
 ## JSON Structure
 
@@ -159,7 +157,7 @@ Each JSON file within the dataset follows the structure outlined below:
             + **name**: Contains an array of steps to complete the instruction.
             + **args**: Arguments specifying additional details for the action.
         + **screenshot**: File name of the associated screenshot.
-        + **xml**: File name of the associated raw XML file..
+        + **xml**: File name of the associated raw XML file.
 
 # Citation
 If you use MobileGPT or its dataset in your work, please cite it as follows:
